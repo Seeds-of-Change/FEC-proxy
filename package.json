@@ -1,0 +1,22 @@
+{
+  "name": "fec-proxy",
+  "version": "1.0.0",
+  "description": "Front End Capstone, Team: Seeds of Change",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karebae/FEC-proxy.git"
+  },
+  "author": "Rick Allen, Jon Fu, Ryan Shin, Karin Aizawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karebae/FEC-proxy/issues"
+  },
+  "homepage": "https://github.com/karebae/FEC-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
