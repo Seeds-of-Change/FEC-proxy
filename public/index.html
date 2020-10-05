@@ -4,6 +4,15 @@
 
   </head>
   <body>
-    <script></script>
+    <div id="reviews"></div>
+    <script src="http://localhost:8080/main.bundle.js"></script>
+
+    <script>
+      ReactDOM.render(
+        React.createElement(reviews),
+        document.getElementById('reviews')
+      );
+    </script>
+
   </body>
 </html>
