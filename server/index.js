@@ -6,9 +6,8 @@ const axios = require('axios');
 const app = express();
 const port = 9999;
 
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../public')));
 app.use(cors());
-
 
 const Proxy = (targetUrl) => (req, res) => {
   axios.get(targetUrl + req.originalUrl)
@@ -24,6 +23,7 @@ const proxyRelatedProducts = Proxy('http://18.144.2.219');
 const proxyProductInfo = Proxy('http://3.138.107.143');
 const proxyQuestions = Proxy('http://54.183.5.42');
 const proxyReviews = Proxy('http://3.131.135.129');
+
 app.use('/products/featureExplorer/:id', proxyFeatureExplorer);
 app.use('/products/relatedProducts/:id', proxyRelatedProducts);
 app.use('/products/productInfo/:id', proxyProductInfo);
